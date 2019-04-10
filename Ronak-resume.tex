@@ -1,0 +1,92 @@
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% \usepackage[utf8]{inputenc}
+% \usepackage[bulgarian]{babel}
+% \usepackage[T1, T2A]{fontenc}
+% \selectlanguage{bulgarian}
+% \usepackage[encoding]{inputenc}
+
+% \usepackage{polyglossia}
+% \setdefaultlanguage{bulgarian}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+% \fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+\usepackage{import}
+\usepackage{hyperref}
+\usepackage{tgbonum}
+
+
+% \usepackage{fontspec}
+% \setromanfont{arial}
+% \setsansfont{arial}
+% \setmonofont[Color={0019D4}]{arial}
+
+\setmainfont{Linux Biolinum O}
+\setsansfont{Linux Biolinum O}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
+
+% \usepackage[utf8]{inputenc}
+% \usepackage[bulgarian, english]{babel}
+
+% \usepackage{fontspec}
+
+
+% \setmainfont{FontAwesome}
+% \setsansfont{FontAwesome}
+% \newfontfamily\greekfont[Script=bulgarian]{Linux Libertine O}
+% \newfontfamily\greekfontsf[Script=bulgarian]{Linux Libertine O}
+
+
+\newcommand{\checkcase}{sample}
+\name { \Huge РУМЯНА}{ \Huge АТАНАСОВА}
+%\address{Mountain View, CA 94043}
+\mobile{0878984486} 
+\homepage{Русе, Владая 8а}
+
+\email{rumyana.yordanova.atanasova@gmail.com}
+\linkedin{www.linkedin.com/in/rumyana-atanasova/}
+
+\newcommand{\showgrades}{yes}
+% \ifdefstring{\checkcase}{finance}{\colorlet{awesome}{awesome-darknight}}{\colorlet{awesome}{awesome-red}}
+
+\begin{document}
+
+
+
+\makecvheader
+\let\cleardoublepage\clearpage
+\vspace{+3mm}
+\vspace{+0.5mm}
+\vspace{+3mm}
+\vspace{+3mm}
+
+% -------------------------------------------------------------------------------------------
+\import{\sectiondir}{PersonalSummary.tex}
+% -------------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------------
+\importsectioncommandtwo{WorkHistory.tex}{ТРУДОВ СТАЖ}
+% -------------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------------
+\importsectioncommandtwo{Education.tex}{Образование}
+% -------------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------------
+\import{\sectiondir}{EducationPageTwo.tex}
+% -------------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------------
+\importsectioncommandtwo{Languages.tex}{Езици}
+% -------------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------------
+\importsectioncommandtwo{ProfessionalTrainingAndQualifications.tex}{Професионални квалификации}
+% -------------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------------
+\importsectioncommandthree{Interests.tex}{Интереси}
+% -------------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------------
+% \importsectioncommandthree{References.tex}{референции}
+% -------------------------------------------------------------------------------------------
+
+\end{document}

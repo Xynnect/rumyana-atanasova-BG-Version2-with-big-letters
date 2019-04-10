@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	Headerprofiles section
+%
+% This file adds profiles of interest
+% below the name in title
+%
+% Author:
+% Ronak Patel <learnronak@outlook.com>
+%
+% Template license:
+% CC BY-SA 4.0 (https://%:w
+%creativecommons.org/licenses/by-sa/4.0/)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% -------Title profiles names Commands------------
+\newcommand{\tprofileA}{
+\position{Software Engineer
+	{\enskip\cdotp\enskip}Systems Engineer}
+}
+\newcommand{\tprofileB}{
+\position{Software Engineer
+	{\enskip\cdotp\enskip}Data Science
+	{\enskip\cdotp\enskip}Full Stack}
+}
+\newcommand{\tprofileC}{
+\position{Software Engineer
+	{\enskip\cdotp\enskip}Systems Engineer
+	{\enskip\cdotp\enskip}Data Science
+	{\enskip\cdotp\enskip}Full Stack}
+}
+\newcommand{\tprofilesample}{
+\position{Artist
+	{\enskip\cdotp\enskip}Painter
+	{\enskip\cdotp\enskip}Author}
+}
+
+%%% Profile selection logic
+\ifdefstring{\checkcase}{A}{\tprofileA}{}
+\ifdefstring{\checkcase}{B}{\tprofileB}{}
+\ifdefstring{\checkcase}{C}{\tprofileC}{}
+\ifdefstring{\checkcase}{sample}{\tprofilesample}{}
+
+
